@@ -1,0 +1,20 @@
+<ion-header [translucent]="true" color="yellow">
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">page1</ion-title>
+      <div>
+        <!--connecting the geo location function. once person clicks the button it calls the functiion from page 1 .ts-->
+        <h3>get your running starting location</h3>
+        <ion-button (click)="getGPS()">Get GPS</ion-button>
+        {{lat}}, {{long}}
+        </div>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

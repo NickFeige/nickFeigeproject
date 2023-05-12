@@ -9,11 +9,21 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Running</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+    <ul>
+      <!--linking all pagees to my home page to be able to access-->
+      <li [routerLink]="['/page1']" routerDirection="forward">geolocation</li>
+     
+      <li [routerLink]="['/page2']" routerDirection="forward">weather</li>
+   
+      <li [routerLink]="['/page3']" routerDirection="forward">page3</li>
+      <li [routerLink]="['/page4']" routerDirection="forward">page4</li>
+      
+    </ul>
   </div>
+  
 </ion-content>
